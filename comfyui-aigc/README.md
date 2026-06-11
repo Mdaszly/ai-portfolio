@@ -1,8 +1,8 @@
 # ComfyUI 故事一键生成工作流
 
 **技术栈**：ComfyUI + Jimeng API（即梦 AI）  
-**工作流文件**：`Jimeng-Story-B2-一集一键.json`（F:\tech-trans-kb 目录下）  
-**结构图**：`workflow-structure.png`（待导出）
+**工作流文件**：`Jimeng-Story-B2-一集一键.json`  
+**结构图**：`AIGC-workflow.png` · `AIGC-2-workflow.png` · `AIGC-3-workflow.png`
 
 ---
 
@@ -14,38 +14,72 @@
 
 ## 方案决策
 
-使用 ComfyUI 搭建「一集一键」工作流，封装：
-- Jimeng API 调用
-- 多模型调度（文生图、图生图、视频）
-- Prompt 优化节点
-- 批量导出与参数预设
+使用 ComfyUI 搭建「一集一键」工作流，封装以下核心能力：
 
-实现故事场景一键生成，减少人工干预。
+- **Jimeng API 调用**：集成即梦 AI 的文生图、图生图、视频生成能力
+- **多模型调度**：支持多种生成模型的灵活切换与组合
+- **Prompt 优化节点**：内置提示词模板与参数优化逻辑
+- **批量导出与参数预设**：支持一键批量生成与自定义参数配置
+
+实现故事场景一键生成，减少人工干预，提升创作效率。
 
 ---
 
 ## 工作流结构
 
-![AIGC-workflow](AIGC-workflow.png)
-![AIGC-2-workflow](AIGC-2-workflow.png)
-![AIGC-3-workflow](AIGC-3-workflow.png)
+### 主工作流概览
 
-（已从 ComfyUI Desktop 导出）
+![工作流主视图](AIGC-workflow.png)
+
+### 文生图分支
+
+![文生图节点结构](AIGC-2-workflow.png)
+
+### 图生图与视频生成分支
+
+![图生图与视频生成节点结构](AIGC-3-workflow.png)
+
+**工作流设计要点**：
+- 采用模块化设计，各功能节点解耦
+- 支持参数预设与动态调整
+- 内置错误处理与重试机制
+- 支持批量生成与导出
+
+---
+
+## 核心节点说明
+
+| 节点类型 | 功能描述 | 参数配置 |
+|----------|----------|----------|
+| **Prompt 优化器** | 自动优化输入提示词，增强生成效果 | 风格标签、细节增强、质量控制 |
+| **Jimeng 文生图** | 调用即梦 AI 文生图 API | 模型选择、分辨率、风格、步数 |
+| **Jimeng 图生图** | 调用即梦 AI 图生图 API | 参考图、强度、风格迁移 |
+| **Jimeng 视频生成** | 调用即梦 AI 视频生成 API | 时长、帧率、风格 |
+| **批量处理器** | 支持多提示词批量生成 | 并发数、输出目录、命名规则 |
 
 ---
 
 ## 复现步骤
 
-1. 安装 ComfyUI Desktop（或网页版）
-2. 下载 `Jimeng-Story-B2-一集一键.json`
-3. 在 ComfyUI 界面点击「Load」导入 JSON
-4. 填入 Jimeng API Key
-5. 点击「Run」一键生成一集故事图片/视频
+1. **安装环境**：安装 ComfyUI Desktop（或网页版）
+2. **准备工作流**：下载 `Jimeng-Story-B2-一集一键.json` 到本地
+3. **导入工作流**：在 ComfyUI 界面点击「Load」导入 JSON 文件
+4. **配置 API Key**：在 Jimeng API 节点中填入您的 API Key
+5. **执行生成**：点击「Run」一键生成一集故事的图片/视频
 
 ---
 
 ## 生成效果
 
-工作流截图已包含（AIGC-*.png），可直接查看节点结构与参数。
+工作流截图已包含在项目中（`AIGC-*.png`），可直接查看节点结构与参数配置。
+
+---
+
+## 扩展能力
+
+- 支持自定义 Prompt 模板库
+- 可扩展其他 AI 生成服务
+- 支持输出格式自定义（PNG/JPG/MP4）
+- 内置水印与版权信息添加
 
 **下一步**：导出高清结构图，补充 3–5 张生成样例，完善 README。
