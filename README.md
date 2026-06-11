@@ -1,7 +1,6 @@
-# AI Portfolio · 李定邦
+# AI Portfolio
 
-> 专注 Agent 编排、RAG 知识工程与智能体喂养的实践作品集  
-> 匹配岗位：AI实习生（JD 核心要求：智能体搭建、RAG 实践、Dify/Kimi 工具、知识投喂、反馈优化、项目交付）
+> 专注 Agent 编排、RAG 知识工程与智能体喂养的实践作品集
 
 ---
 
@@ -26,16 +25,4 @@
 
 ---
 
-## 为什么这个作品集能匹配 JD
-
-- **智能体喂养与知识工程**：Tech-Trans 项目完整记录了「知识投喂 → 测试集验证 → Bad Case 回归 → Prompt/KB 迭代」闭环，输出可复用喂养记录与操作手册。
-- **Dify 与阿里云百炼实操**：JD 明确提到「阿里云百炼」「Dify」「智能体喂养」，本作品集全部覆盖且有证据。
-- **项目交付优先**：每个 demo 均有文档、截图、测试报告，便于团队快速复现与验收。
-- **Cursor AI 编程效率**：所有项目均使用 Cursor 完成需求拆解、代码生成、Review 与 Vibe Coding 交付。
-
----
-
-**仓库地址**：https://github.com/Mdaszly/ai-portfolio  
-**作者**：李定邦 · 2028 届本科在读
-
-如需完整简历或面试复盘材料，请联系 13760660442 / 19867981583@163.com
+**仓库地址**：https://github.com/Mdaszly/ai-portfolio
