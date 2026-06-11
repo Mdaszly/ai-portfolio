@@ -46,7 +46,7 @@
 
 1. 克隆本仓库，进入 `dify-rag-mall-kb` 目录
 2. 复制 `feeding-test-log.md` 中的测试问句到 Dify Chatbot
-3. 导入 Dify Workflow（架构图见 tech-trans-kb 目录）
+3. 导入 Dify Workflow（架构图见 `tech-trans-mall-kb-whole-workflow.png`）
 4. 按 v0.8 Prompt/KB 配置运行，观察 14/25 Pass 结果
 
 ---

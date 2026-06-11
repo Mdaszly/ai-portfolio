@@ -24,11 +24,13 @@
 
 ---
 
-## 工作流结构（待补充截图）
+## 工作流结构
 
-![workflow-structure](workflow-structure.png)
+![AIGC-workflow](AIGC-workflow.png)
+![AIGC-2-workflow](AIGC-2-workflow.png)
+![AIGC-3-workflow](AIGC-3-workflow.png)
 
-（使用 ComfyUI Desktop 右键菜单「Save Image」或浏览器截图导出）
+（已从 ComfyUI Desktop 导出）
 
 ---
 
@@ -44,7 +46,7 @@
 
 ## 生成效果
 
-（待补充 sample 图片）
+工作流截图已包含（AIGC-*.png），可直接查看节点结构与参数。
 
 ---
 
