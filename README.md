@@ -10,7 +10,7 @@
 |------|--------|----------|------|
 | **Tech-Trans 商场智能客服 RAG** | Dify Workflow + 阿里云百炼 | 25 条测试集驱动的喂养迭代，8 轮 Bad Case 回归，完整喂养记录与操作手册 | feeding-test-log.md · Dify 工作流架构图 |
 | **ComfyUI 故事一键生成工作流** | ComfyUI + Jimeng API | 一集一键故事生成，Prompt 优化与节点编排 | 工作流 JSON + 结构图 + 生成样例 |
-| **阿里云百炼原生 RAG Assistant** | 阿里云百炼 Assistant | 平台级 RAG 搭建与知识库管理 | 控制台截图 + 对话记录 |
+| **阿里云百炼原生 RAG Assistant** | 阿里云百炼（Qwen-Max + text-embedding-v4 + qwen3-rerank） | 规则约束、知识库索引、重排序与记忆控制 | rule-prompt.png · data-connector.png · knowledge-base-*.png |
 
 ---
 
